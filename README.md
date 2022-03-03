@@ -1,2 +1,2 @@
 # urban-barnacle
-My journey through coding
+My journey through coding.
