@@ -121,6 +121,6 @@ number_of_hours = int(input("How many hours are you going to rest? "))
 new_time = (time_now + number_of_hours) % 12
 print("The alarm will ring at exactly when the hour hand is at", new_time)
 
-#Day 2
+
 
 
