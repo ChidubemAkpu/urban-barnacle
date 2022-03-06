@@ -7,6 +7,7 @@ screen = turtle.Screen()
 diagram = turtle.Turtle()
 
 diagram.shape("blank")
+diagram.speed(1)
 
 poly_num_side =int(screen.numinput(title="Polygon's side number",
 prompt="What is the polygon's number of sides?",default=None,minval=3,maxval=None))
