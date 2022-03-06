@@ -17,10 +17,10 @@ line_color = screen.textinput(title="Line color",prompt="What shape's line color
 screen.bgcolor(bg_color)
 
 n1 = screen.numinput(title='First triangle side',prompt="Choose a length",default=None,
-minval=None,maxval=None)
+minval=0,maxval=None)
 
 n2 =  screen.numinput(title='second triangle side',prompt="Choose a length",default=None,
-minval=None,maxval=None)
+minval=0,maxval=None)
 
 #Angle of rotation
 hypothenus = mt.sqrt(n1**2 + n2**2)
@@ -34,7 +34,7 @@ pen_size =  screen.numinput(title='Pen size',prompt="Choose a pen size",default=
 minval=None,maxval=None)
 
 #Code implementation
-diagram.pensize(3)
+diagram.pensize(pen_size)
 diagram.forward(n1)
 diagram.left(90)
 diagram.forward(n2)
