@@ -19,11 +19,21 @@ else:
 for month in months_space:
     if month in feb_list:
         check_year_type = int(input("Input year "))
-        if check_year_type % 4 == 0:
-            months_list.append("February has 29 days")
+        check_year_type_century = check_year_type % 100
 
+        if check_year_type_century == 0:
+            if check_year_type % 400 == 0:
+                months_list.append("February has 29 days")
+                
+            else:
+                months_list.append("February has 28 days")
+                
         else:
-            months_list.append("February has 28 days")
+            if check_year_type % 4 == 0:
+                months_list.append("February has 29 days")
+
+            else:
+                months_list.append("February has 28 days")
 
     else:
         for num in days_with_30:
