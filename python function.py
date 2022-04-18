@@ -21,6 +21,6 @@ try:
     print(day_add(accurate_case,4))
 
 except:
-    print('Enter correct')
+    print('You entered an incorrect day')
 
 
